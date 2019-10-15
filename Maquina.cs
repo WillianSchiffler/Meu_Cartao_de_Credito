@@ -22,7 +22,7 @@ public bool inserirCartao(double v, string senha, Cartao c){
 }
 
 public static double juros(){
-  return 0.01;
+  return 1.15;
 }
 }
 }

@@ -56,7 +56,9 @@ class Cartao {
     
     total_fatura = (total_fatura - v);
     if(total_fatura > 0){
-      Console.WriteLine("Você ainda deve! Pague primeiro antes de comprar...");
+      Console.WriteLine("Você ainda deve, e agora tem juros! Pague primeiro antes de comprar...");
+      total_fatura = total_fatura * Maquina.juros();
+      Console.WriteLine("Restante: {0}", total_fatura);
       return false;
     }
     else{
